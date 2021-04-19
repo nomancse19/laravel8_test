@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class TestController extends Controller
 {
@@ -18,10 +19,43 @@ class TestController extends Controller
 
            // ->generate('Jahidul Islam Noman', public_path('images/qrcode.svg'));
           //return QrCode::generate('Make me into a QrCode!', public_path('images/qrcode.svg'));
-        return  QrCode::format('png')->merge(public_path('images/Ifad.jpg'), .3, true)->generate('noman');
-   
+       $img= base64_encode( QrCode::format('png')->merge(public_path('images/Ifad.jpg'), .3, true)->generate('noman'));
+       return  '<img src="data:image/png;base64,'.$img.'">';
    
         }
+
+
+
+      /*  public function test(){
+          $user=DB::table('users')->get();
+
+          $user1=DB::table('users')->get();
+
+          $user2=DB::table('users')->get();
+          $share_data = array_keys(get_defined_vars());
+          return view('template.input',compact($share_data));
+        } */
+
+
+        public function test(){
+          $data=array();
+          $data['user']=DB::table('users')->get();
+          $data['user1']=DB::table('users')->get();
+          $data['user2']=DB::table('users')->get();
+        //  $share_data = array_keys(get_defined_vars());
+          return view('template.input',['data'=>$data]);
+        }
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
