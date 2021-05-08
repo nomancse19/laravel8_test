@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Library\Services\TestService;
 
 class TestController extends Controller
 {
@@ -37,13 +38,19 @@ class TestController extends Controller
         } */
 
 
-        public function test(){
+        public function test_2(){
           $data=array();
           $data['user']=DB::table('users')->get();
           $data['user1']=DB::table('users')->get();
           $data['user2']=DB::table('users')->get();
         //  $share_data = array_keys(get_defined_vars());
           return view('template.input',['data'=>$data]);
+        }        
+		
+		
+		public function test(){
+			$obj= new TestService();
+			return $obj->test_service();
         }
 
 
