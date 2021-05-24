@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Library\Services\TestService;
 
+use DNS1D;
+use Illuminate\Support\Facades\Storage;
+
+
+
 class TestController extends Controller
 {
     public function qr_code(){
@@ -45,7 +50,26 @@ class TestController extends Controller
           $data['user2']=DB::table('users')->get();
         //  $share_data = array_keys(get_defined_vars());
           return view('template.input',['data'=>$data]);
-        }        
+        } 
+        
+        
+
+
+        public function barcode(){
+          //return  DNS1D::getBarcodeSVG('4445645656', 'QR');
+          return Storage::disk('public')->put('test1.png',base64_decode(DNS1D::getBarcodePNG("1254545", "C128")));
+        }
+
+
+
+
+
+
+
+
+
+
+
 		
 		
 		public function test(){

@@ -25,6 +25,8 @@ Auth::routes();
 
 Route::get('/Qr_code',[TestController::class,'qr_code'])->name('qrcode');
 
+Route::get('/bar_code',[TestController::class,'barcode'])->name('barcode');
+
 
 Route::get('/test',[TestController::class,'test'])->name('test');
 Route::get('/Save_Qr_code',[TestController::class,'save_qr_code'])->name('save.qrcode');

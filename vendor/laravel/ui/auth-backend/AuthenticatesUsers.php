@@ -6,8 +6,7 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
-use Session;
-use Illuminate\Support\Facades\DB;
+
 trait AuthenticatesUsers
 {
     use RedirectsUsers, ThrottlesLogins;
@@ -126,20 +125,7 @@ trait AuthenticatesUsers
      */
     protected function authenticated(Request $request, $user)
     {
-        $user_id=Auth::id();
-      //  $user = DB::table('permission')->get();
-      $data=  DB::table('permission')
-                        ->where('roll', $user_id)
-                        ->get();
-        $permission_name=array();
-        foreach($data as $all_result){
-            $permission_role_name=$all_result->name;
-            array_push($permission_name,$permission_role_name);
-        }
-        Session::put('user_permission',$permission_name);
-
-        
-
+        //
     }
 
     /**
@@ -198,7 +184,7 @@ trait AuthenticatesUsers
      */
     protected function loggedOut(Request $request)
     {
-        
+        //
     }
 
     /**

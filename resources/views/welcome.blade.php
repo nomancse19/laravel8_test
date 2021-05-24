@@ -49,7 +49,8 @@
 
 
 
-
+{{ DNS1D::getBarcodePNGPath('4445645656', 'PHARMA2T') }}
+<div>{!!DNS1D::getBarcodeHTML(8889899, 'C128')!!}</div>
 
                 </div>
 
