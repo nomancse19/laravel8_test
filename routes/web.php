@@ -34,3 +34,7 @@ Route::get('/Save_Qr_code',[TestController::class,'save_qr_code'])->name('save.q
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::post('/test/get', [ProductController::class, 'test'])->name('test.data');
 Route::get('/test/show', [ProductController::class, 'product_show'])->name('test.show');
+
+
+Route::get('/Document/show', [TestController::class, 'document_upload'])->name('document.upload');
+

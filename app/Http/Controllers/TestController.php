@@ -62,6 +62,11 @@ class TestController extends Controller
 
 
 
+        public function document_upload(){
+          return view("template.document");
+        }
+
+
 
 
 
