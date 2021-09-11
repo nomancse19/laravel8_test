@@ -67,6 +67,21 @@ class TestController extends Controller
         }
 
 
+        public function document_store(Request $request){
+          $request->validate([
+           // 'document_name' => 'required',
+            'file_name' => 'required|max:300kb|Mimes:jpeg,jpg,gif,png| dimensions:width=300,height=300'
+        ]);
+
+        if ($image = $request->file('file_name')) {
+            $image= $request->file('file_name');
+           $imageName= time().'.'.$image->getClientOriginalExtension();
+
+           return $image->move(public_path('images'), $imageName);
+        }
+        }
+
+
 
 
 

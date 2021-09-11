@@ -72,24 +72,24 @@
 <body>
 
     <div class="container mt-5">
-        <form action="{{ route('document.store') }}" method="post" enctype="multipart/form-data">
+        <form action="<?php echo e(route('document.store')); ?>" method="post" enctype="multipart/form-data">
           <h3 class="text-center mb-5">Upload File in Laravel</h3>
-            @csrf
-            @if ($message = Session::get('success'))
+            <?php echo csrf_field(); ?>
+            <?php if($message = Session::get('success')): ?>
             <div class="alert alert-success">
-                <strong>{{ $message }}</strong>
+                <strong><?php echo e($message); ?></strong>
             </div>
-          @endif
+          <?php endif; ?>
 
-          @if (count($errors) > 0)
+          <?php if(count($errors) > 0): ?>
             <div class="alert alert-danger">
                 <ul>
-                    @foreach ($errors->all() as $error)
-                      <li>{{ $error }}</li>
-                    @endforeach
+                    <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                      <li><?php echo e($error); ?></li>
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </ul>
             </div>
-          @endif
+          <?php endif; ?>
 
           <div class="form-group">
             <label for="email">Document Name :</label>
@@ -224,4 +224,4 @@ $(document).ready(function() {
 
 </script>
 </body>
-</html>
+</html><?php /**PATH G:\wamp64\www\laravel8_test\resources\views/template/document.blade.php ENDPATH**/ ?>
