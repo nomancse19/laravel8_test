@@ -72,7 +72,7 @@
 <body>
 
     <div class="container mt-5">
-        <form action="" method="post" enctype="multipart/form-data">
+        <form action="<?php echo e(route('document.store')); ?>" method="post" enctype="multipart/form-data">
           <h3 class="text-center mb-5">Upload File in Laravel</h3>
             <?php echo csrf_field(); ?>
             <?php if($message = Session::get('success')): ?>
@@ -91,9 +91,15 @@
             </div>
           <?php endif; ?>
 
-          <div>
-            <input type="file" name="file">
-            <label for="chooseFile">Select file</label>
+          <div class="form-group">
+            <label for="email">Document Name :</label>
+            <input type="text" class="form-control" placeholder="Enter Document Name" name="document_name" id="email">
+          </div>
+
+
+
+          <div class="form-group">
+            <input type="file" class="form-control" name="file_name">
             </div>
 
             <button type="submit" name="submit" class="btn btn-primary btn-block mt-4">
@@ -119,91 +125,32 @@
     <table id="example" class="table table-striped table-bordered dataTable" cellspacing="0" width="100%" role="grid" aria-describedby="example_info" style="width: 100%;">
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Age</th>
-                <th>Start date</th>
-                <th>Salary</th>
+                <th>Sl</th>
+                <th>Image Name</th>
+                <th>Thumb Image</th>
+                <th>date</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
+            <?php
+                $n=0;
+            ?>
+            <?php $__currentLoopData = $document_data; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $all_document_data): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+
             <tr>
-                <td>Tiger Nixon</td>
-                <td>System Architect</td>
-                <td>Edinburgh</td>
-                <td>61</td>
-                <td>2011/04/25</td>
-                <td>$320,800</td>
+                <td><?php echo e($n++); ?></td>
+                <td><?php echo e($all_document_data->document_name); ?></td>
+                <td><?php echo e($all_document_data->document_image); ?></td>
+                <td><?php echo e($all_document_data->document_image); ?></td>
+                <td>Action</td>
+
             </tr>
-            <tr>
-                <td>Garrett Winters</td>
-                <td>Accountant</td>
-                <td>Tokyo</td>
-                <td>63</td>
-                <td>2011/07/25</td>
-                <td>$170,750</td>
-            </tr>
-            <tr>
-                <td>Ashton Cox</td>
-                <td>Junior Technical Author</td>
-                <td>San Francisco</td>
-                <td>66</td>
-                <td>2009/01/12</td>
-                <td>$86,000</td>
-            </tr>
-            <tr>
-                <td>Cedric Kelly</td>
-                <td>Senior Javascript Developer</td>
-                <td>Edinburgh</td>
-                <td>22</td>
-                <td>2012/03/29</td>
-                <td>$433,060</td>
-            </tr>
-            <tr>
-                <td>Airi Satou</td>
-                <td>Accountant</td>
-                <td>Tokyo</td>
-                <td>33</td>
-                <td>2008/11/28</td>
-                <td>$162,700</td>
-            </tr>
-            <tr>
-                <td>Brielle Williamson</td>
-                <td>Integration Specialist</td>
-                <td>New York</td>
-                <td>61</td>
-                <td>2012/12/02</td>
-                <td>$372,000</td>
-            </tr>
-            <tr>
-                <td>Herrod Chandler</td>
-                <td>Sales Assistant</td>
-                <td>San Francisco</td>
-                <td>59</td>
-                <td>2012/08/06</td>
-                <td>$137,500</td>
-            </tr>
-            <tr>
-                <td>Rhona Davidson</td>
-                <td>Integration Specialist</td>
-                <td>Tokyo</td>
-                <td>55</td>
-                <td>2010/10/14</td>
-                <td>$327,900</td>
-            </tr>
+            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+
 
         </tbody>
-        <tfoot>
-            <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Age</th>
-                <th>Start date</th>
-                <th>Salary</th>
-            </tr>
-        </tfoot>
+
     </table>
 
 <script type="text/javascript">
