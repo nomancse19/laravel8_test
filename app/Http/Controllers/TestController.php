@@ -6,7 +6,7 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Library\Services\TestService;
-
+use Image;
 use DNS1D;
 use Illuminate\Support\Facades\Storage;
 
@@ -70,16 +70,35 @@ class TestController extends Controller
         public function document_store(Request $request){
           $request->validate([
            // 'document_name' => 'required',
-            'file_name' => 'required|max:300kb|Mimes:jpeg,jpg,gif,png| dimensions:width=300,height=300'
+            'file_name' => 'required|max:30000kb|Mimes:jpeg,jpg,gif,png| dimensions:width=300,height=300'
         ]);
 
         if ($image = $request->file('file_name')) {
             $image= $request->file('file_name');
-           $imageName= time().'.'.$image->getClientOriginalExtension();
+            $input['imagename'] = time().'.'.$image->extension();
+    
+         
+    
+            $destinationPath = public_path('/thumb');
+    
+            $img = Image::make($image->path());
+    
+           $thum_name= $img->resize(100, 100, function ($constraint) {
+                $constraint->aspectRatio();
+            });
+            $thumb=$thum_name->save($destinationPath.'/'.$input['imagename']);
+    
+            echo $thumb;
+            echo "<br>";
 
-           return $image->move(public_path('images'), $imageName);
+       
+    
+            $destinationPath = public_path('/images');
+    
+          $main_image=  $image->move($destinationPath, $input['imagename']);
+          echo $main_image;
         }
-        }
+       }
 
 
 
