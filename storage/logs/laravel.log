@@ -430,3 +430,152 @@ Did you mean one of these?
 #35 D:\\wamp64\\www\\laravel8_test\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #36 {main}
 "} 
+[2022-05-18 18:47:51] local.ERROR: rename(G:\wamp64\www\laravel8_test\bootstrap\cache\pac4CB1.tmp,G:\wamp64\www\laravel8_test\bootstrap\cache\packages.php): Access is denied. (code: 5) {"exception":"[object] (ErrorException(code: 0): rename(G:\\wamp64\\www\\laravel8_test\\bootstrap\\cache\\pac4CB1.tmp,G:\\wamp64\\www\\laravel8_test\\bootstrap\\cache\\packages.php): Access is denied. (code: 5) at G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php:211)
+[stacktrace]
+#0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'rename(G:\\\\wamp6...', 'G:\\\\wamp64\\\\www\\\\l...', 211, Array)
+#1 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(211): rename('G:\\\\wamp64\\\\www\\\\l...', 'G:\\\\wamp64\\\\www\\\\l...')
+#2 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(181): Illuminate\\Filesystem\\Filesystem->replace('G:\\\\wamp64\\\\www\\\\l...', '<?php return ar...')
+#3 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(136): Illuminate\\Foundation\\PackageManifest->write(Array)
+#4 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#5 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#6 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#7 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#8 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#9 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#10 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#11 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 
+[2022-05-18 18:47:51] local.ERROR: rename(G:\wamp64\www\laravel8_test\bootstrap\cache\pac4CBF.tmp,G:\wamp64\www\laravel8_test\bootstrap\cache\packages.php): Access is denied. (code: 5) {"exception":"[object] (ErrorException(code: 0): rename(G:\\wamp64\\www\\laravel8_test\\bootstrap\\cache\\pac4CBF.tmp,G:\\wamp64\\www\\laravel8_test\\bootstrap\\cache\\packages.php): Access is denied. (code: 5) at G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php:211)
+[stacktrace]
+#0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'rename(G:\\\\wamp6...', 'G:\\\\wamp64\\\\www\\\\l...', 211, Array)
+#1 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(211): rename('G:\\\\wamp64\\\\www\\\\l...', 'G:\\\\wamp64\\\\www\\\\l...')
+#2 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(181): Illuminate\\Filesystem\\Filesystem->replace('G:\\\\wamp64\\\\www\\\\l...', '<?php return ar...')
+#3 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(136): Illuminate\\Foundation\\PackageManifest->write(Array)
+#4 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#5 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#6 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#7 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#8 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#9 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#10 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#11 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 
+[2022-05-18 18:47:51] local.ERROR: rename(G:\wamp64\www\laravel8_test\bootstrap\cache\pac4CB3.tmp,G:\wamp64\www\laravel8_test\bootstrap\cache/packages.php): Access is denied. (code: 5) {"exception":"[object] (ErrorException(code: 0): rename(G:\\wamp64\\www\\laravel8_test\\bootstrap\\cache\\pac4CB3.tmp,G:\\wamp64\\www\\laravel8_test\\bootstrap\\cache/packages.php): Access is denied. (code: 5) at G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php:211)
+[stacktrace]
+#0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'rename(G:\\\\wamp6...', 'G:\\\\wamp64\\\\www\\\\l...', 211, Array)
+#1 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(211): rename('G:\\\\wamp64\\\\www\\\\l...', 'G:\\\\wamp64\\\\www\\\\l...')
+#2 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(181): Illuminate\\Filesystem\\Filesystem->replace('G:\\\\wamp64\\\\www\\\\l...', '<?php return ar...')
+#3 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(136): Illuminate\\Foundation\\PackageManifest->write(Array)
+#4 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#5 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#6 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#7 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#8 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#9 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#10 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#11 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 
+[2022-05-18 18:47:51] local.ERROR: rename(G:\wamp64\www\laravel8_test\bootstrap\cache\pac4CB4.tmp,G:\wamp64\www\laravel8_test\bootstrap\cache/packages.php): Access is denied. (code: 5) {"exception":"[object] (ErrorException(code: 0): rename(G:\\wamp64\\www\\laravel8_test\\bootstrap\\cache\\pac4CB4.tmp,G:\\wamp64\\www\\laravel8_test\\bootstrap\\cache/packages.php): Access is denied. (code: 5) at G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php:211)
+[stacktrace]
+#0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'rename(G:\\\\wamp6...', 'G:\\\\wamp64\\\\www\\\\l...', 211, Array)
+#1 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(211): rename('G:\\\\wamp64\\\\www\\\\l...', 'G:\\\\wamp64\\\\www\\\\l...')
+#2 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(181): Illuminate\\Filesystem\\Filesystem->replace('G:\\\\wamp64\\\\www\\\\l...', '<?php return ar...')
+#3 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(136): Illuminate\\Foundation\\PackageManifest->write(Array)
+#4 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#5 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#6 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#7 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#8 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#9 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#10 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#11 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 
+[2022-05-18 18:47:51] local.ERROR: rename(G:\wamp64\www\laravel8_test\bootstrap\cache\pac4CB0.tmp,G:\wamp64\www\laravel8_test\bootstrap\cache\packages.php): Access is denied. (code: 5) {"exception":"[object] (ErrorException(code: 0): rename(G:\\wamp64\\www\\laravel8_test\\bootstrap\\cache\\pac4CB0.tmp,G:\\wamp64\\www\\laravel8_test\\bootstrap\\cache\\packages.php): Access is denied. (code: 5) at G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php:211)
+[stacktrace]
+#0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'rename(G:\\\\wamp6...', 'G:\\\\wamp64\\\\www\\\\l...', 211, Array)
+#1 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(211): rename('G:\\\\wamp64\\\\www\\\\l...', 'G:\\\\wamp64\\\\www\\\\l...')
+#2 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(181): Illuminate\\Filesystem\\Filesystem->replace('G:\\\\wamp64\\\\www\\\\l...', '<?php return ar...')
+#3 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(136): Illuminate\\Foundation\\PackageManifest->write(Array)
+#4 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#5 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#6 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#7 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#8 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#9 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#10 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#11 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 
+[2022-05-18 18:47:52] local.ERROR: rename(G:\wamp64\www\laravel8_test\bootstrap\cache\ser4FBF.tmp,G:\wamp64\www\laravel8_test\bootstrap\cache/services.php): Access is denied. (code: 5) {"exception":"[object] (ErrorException(code: 0): rename(G:\\wamp64\\www\\laravel8_test\\bootstrap\\cache\\ser4FBF.tmp,G:\\wamp64\\www\\laravel8_test\\bootstrap\\cache/services.php): Access is denied. (code: 5) at G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php:211)
+[stacktrace]
+#0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'rename(G:\\\\wamp6...', 'G:\\\\wamp64\\\\www\\\\l...', 211, Array)
+#1 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(211): rename('G:\\\\wamp64\\\\www\\\\l...', 'G:\\\\wamp64\\\\www\\\\l...')
+#2 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(194): Illuminate\\Filesystem\\Filesystem->replace('G:\\\\wamp64\\\\www\\\\l...', '<?php return ar...')
+#3 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(165): Illuminate\\Foundation\\ProviderRepository->writeManifest(Array)
+#4 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest(Array)
+#5 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(649): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#6 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#7 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#8 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#9 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#10 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 {main}
+"} 
+[2022-05-18 18:47:52] local.ERROR: Uncaught ReflectionException: Class blade.compiler does not exist in G:\wamp64\www\laravel8_test\vendor\laravel\framework\src\Illuminate\Container\Container.php:836
+Stack trace:
+#0 G:\wamp64\www\laravel8_test\vendor\laravel\framework\src\Illuminate\Container\Container.php(836): ReflectionClass->__construct('blade.compiler')
+#1 G:\wamp64\www\laravel8_test\vendor\laravel\framework\src\Illuminate\Container\Container.php(717): Illuminate\Container\Container->build('blade.compiler')
+#2 G:\wamp64\www\laravel8_test\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(841): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#3 G:\wamp64\www\laravel8_test\vendor\laravel\framework\src\Illuminate\Container\Container.php(655): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#4 G:\wamp64\www\laravel8_test\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(826): Illuminate\Container\Container->make('blade.compiler', Array)
+#5 G:\wamp64\www\laravel8_test\ {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught ReflectionException: Class blade.compiler does not exist in G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:836
+Stack trace:
+#0 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(836): ReflectionClass->__construct('blade.compiler')
+#1 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(717): Illuminate\\Container\\Container->build('blade.compiler')
+#2 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(841): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#3 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(655): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#4 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(826): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#5 G:\\wamp64\\www\\laravel8_test\\ at G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:838)
+[stacktrace]
+#0 {main}
+"} 
+[2022-05-18 18:47:52] local.ERROR: Uncaught ReflectionException: Class view does not exist in G:\wamp64\www\laravel8_test\vendor\laravel\framework\src\Illuminate\Container\Container.php:836
+Stack trace:
+#0 G:\wamp64\www\laravel8_test\vendor\laravel\framework\src\Illuminate\Container\Container.php(836): ReflectionClass->__construct('view')
+#1 G:\wamp64\www\laravel8_test\vendor\laravel\framework\src\Illuminate\Container\Container.php(717): Illuminate\Container\Container->build('view')
+#2 G:\wamp64\www\laravel8_test\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(841): Illuminate\Container\Container->resolve('view', Array, true)
+#3 G:\wamp64\www\laravel8_test\vendor\laravel\framework\src\Illuminate\Container\Container.php(655): Illuminate\Foundation\Application->resolve('view', Array)
+#4 G:\wamp64\www\laravel8_test\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(826): Illuminate\Container\Container->make('view', Array)
+#5 G:\wamp64\www\laravel8_test\vendor\laravel\framework\src\Illuminate\Foundation\helpers.p {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught ReflectionException: Class view does not exist in G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:836
+Stack trace:
+#0 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(836): ReflectionClass->__construct('view')
+#1 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(717): Illuminate\\Container\\Container->build('view')
+#2 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(841): Illuminate\\Container\\Container->resolve('view', Array, true)
+#3 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(655): Illuminate\\Foundation\\Application->resolve('view', Array)
+#4 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(826): Illuminate\\Container\\Container->make('view', Array)
+#5 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.p at G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:838)
+[stacktrace]
+#0 {main}
+"} 
+[2022-05-18 18:47:52] local.ERROR: Uncaught ReflectionException: Class translator does not exist in G:\wamp64\www\laravel8_test\vendor\laravel\framework\src\Illuminate\Container\Container.php:836
+Stack trace:
+#0 G:\wamp64\www\laravel8_test\vendor\laravel\framework\src\Illuminate\Container\Container.php(836): ReflectionClass->__construct('translator')
+#1 G:\wamp64\www\laravel8_test\vendor\laravel\framework\src\Illuminate\Container\Container.php(717): Illuminate\Container\Container->build('translator')
+#2 G:\wamp64\www\laravel8_test\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(841): Illuminate\Container\Container->resolve('translator', Array, true)
+#3 G:\wamp64\www\laravel8_test\vendor\laravel\framework\src\Illuminate\Container\Container.php(655): Illuminate\Foundation\Application->resolve('translator', Array)
+#4 G:\wamp64\www\laravel8_test\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(826): Illuminate\Container\Container->make('translator', Array)
+#5 G:\wamp64\www\laravel8_test\vendor\laravel\framework {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught ReflectionException: Class translator does not exist in G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:836
+Stack trace:
+#0 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(836): ReflectionClass->__construct('translator')
+#1 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(717): Illuminate\\Container\\Container->build('translator')
+#2 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(841): Illuminate\\Container\\Container->resolve('translator', Array, true)
+#3 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(655): Illuminate\\Foundation\\Application->resolve('translator', Array)
+#4 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(826): Illuminate\\Container\\Container->make('translator', Array)
+#5 G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework at G:\\wamp64\\www\\laravel8_test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:838)
+[stacktrace]
+#0 {main}
+"} 
