@@ -10,8 +10,10 @@ use App\Models\DocumentUploadModel;
 use Image;
 use DNS1D;
 use Illuminate\Support\Facades\Storage;
-
-
+use App\Mail\TestMail;
+use Mail;
+use App\Jobs\TestEmailJob;
+use Illuminate\Support\Facades\Artisan;
 
 class TestController extends Controller
 {
@@ -102,6 +104,28 @@ class TestController extends Controller
        }
 
 
+
+
+
+       public function send_mail1(){
+        $email = 'noman.cse19@gmail.com';
+   
+        $mailInfo = [
+            'title' => 'Welcome New User',
+            'url' => 'https://www.remotestack.io'
+        ];
+  
+        Mail::to($email)->send(new TestMail($mailInfo));
+      
+       }
+
+       public function send_mail(){
+        $email = 'noman.cse19@gmail.com';
+        dispatch(new TestEmailJob($email));
+
+        //Artisan::call('queue:work');
+        dd('done');
+       }
 
 
 

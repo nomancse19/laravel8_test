@@ -5,7 +5,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TestController;
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Artisan;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,7 +21,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/run', function () {
+   return Artisan::call("queue:work");
+});
+
 Auth::routes();
+
+Route::get('/mail-send', [TestController::class, 'send_mail']);
+
 
 Route::get('/Qr_code',[TestController::class,'qr_code'])->name('qrcode');
 
