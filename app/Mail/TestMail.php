@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class TestMail extends Mailable implements ShouldQueue
+class TestMail extends Mailable
 {
     use Queueable, SerializesModels;
     public $mail_info;
@@ -30,6 +30,12 @@ class TestMail extends Mailable implements ShouldQueue
     {
         return $this->view('template.mail_send')
                 ->with('mailInfo', $this->mail_info);
-       
+
     }
+
+
+
+
+
+
 }

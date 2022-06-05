@@ -3,9 +3,10 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TestController;
-
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,6 +30,7 @@ Route::get('/run', function () {
 Auth::routes();
 
 Route::get('/mail-send', [TestController::class, 'send_mail']);
+
 
 
 Route::get('/Qr_code',[TestController::class,'qr_code'])->name('qrcode');

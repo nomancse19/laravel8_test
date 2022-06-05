@@ -9,7 +9,8 @@ use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use App\Mail\TestMail;
-use Mail;
+use Illuminate\Support\Facades\Mail;
+
 class TestEmailJob implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
@@ -36,7 +37,9 @@ class TestEmailJob implements ShouldQueue
             'url' => 'https://www.remotestack.io'
         ];
         $email = new TestMail($mailInfo);
-       
+
         Mail::to($this->mail_info)->send($email);
+
+
     }
 }
