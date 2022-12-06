@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Storage;
 use App\Mail\TestMail;
 use Mail;
 use App\Jobs\TestEmailJob;
+use App\Models\User;
 use Illuminate\Support\Facades\Artisan;
 
 class TestController extends Controller
@@ -139,6 +140,16 @@ class TestController extends Controller
 		public function test(){
 			$obj= new TestService();
 			return $obj->test_service();
+        }
+
+
+
+        public function user_data_show(){
+          //$data= User::orderBy("id","asc")->limit(2000)->get();
+         $data = DB::table('users')->paginate(50);
+          $share=array_keys(get_defined_vars());
+          //return $data;
+          return view('template.normal_view',compact($share));
         }
 
 

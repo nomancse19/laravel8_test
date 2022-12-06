@@ -49,3 +49,5 @@ Route::get('/test/show', [ProductController::class, 'product_show'])->name('test
 Route::get('/Document/show', [TestController::class, 'document_upload'])->name('document.upload');
 Route::post('/Document/store', [TestController::class, 'document_store'])->name('document.store');
 
+
+Route::get('/Bigdata/Normal/View', [TestController::class, 'user_data_show'])->name('BigdataNormalView');
