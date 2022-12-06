@@ -15,7 +15,7 @@ use Mail;
 use App\Jobs\TestEmailJob;
 use App\Models\User;
 use Illuminate\Support\Facades\Artisan;
-
+use PDF;
 class TestController extends Controller
 {
     public function qr_code(){
@@ -145,11 +145,29 @@ class TestController extends Controller
 
 
         public function user_data_show(){
-          //$data= User::orderBy("id","asc")->limit(2000)->get();
-         $data = DB::table('users')->paginate(50);
-          $share=array_keys(get_defined_vars());
+         // $data= User::orderBy("id","asc")->limit(10000)->get();
+         //$data = DB::table('users')->paginate(50);
+          //$share=array_keys(get_defined_vars());
           //return $data;
-          return view('template.normal_view',compact($share));
+          return view('template.ajax_data_view');
+          //$pdf = PDF::loadView('pdf.document', $data);
+
+         // $pdf = PDF::loadHtml(view('template.normal_view', compact($share)));
+        
+          //return $pdf->stream(rand(111,999).'.pdf');
+          //return $pdf->stream('document.pdf');
+        }
+
+
+        
+        public function ajax_data_get(){
+          $data= User::orderBy("id","asc")->limit(25000)->get();
+          //$data = DB::table('users')->paginate(50);
+          // $share=array_keys(get_defined_vars());
+           //return view('template.normal_view',compact($share));
+           return json_encode($data);
+ 
+
         }
 
 

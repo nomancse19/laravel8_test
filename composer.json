@@ -14,6 +14,7 @@
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.2",
         "milon/barcode": "^8.0",
+        "niklasravnsborg/laravel-pdf": "^4.1",
         "nwidart/laravel-modules": "^8.2",
         "simplesoftwareio/simple-qrcode": "^4.2"
     },

@@ -51,3 +51,4 @@ Route::post('/Document/store', [TestController::class, 'document_store'])->name(
 
 
 Route::get('/Bigdata/Normal/View', [TestController::class, 'user_data_show'])->name('BigdataNormalView');
+Route::get('/Bigdata/Normal/AjaxView', [TestController::class, 'ajax_data_get'])->name('BigdataNormalViewAjax');
